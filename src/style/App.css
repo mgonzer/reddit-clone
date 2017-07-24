@@ -22,3 +22,35 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#filter-div {
+
+}
+#filter-post {
+  margin-top: 1em;
+
+}
+#new-post {
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+h3{
+  margin-bottom: 0em;
+}
+
+.fa-arrow-up{
+  padding-right:1em;
+  color: green;
+}
+
+.fa-arrow-down {
+  padding-left: 1em;
+  color: red;
+}
