@@ -8,7 +8,8 @@ class PostsNew extends Component {
       author: '',
       body: '',
       image_url: '',
-      votes: 0
+      votes: 0,
+      comments: []
     }
     this.handleChange = this.handleChange.bind(this);
     this.addPost  = this.addPost.bind(this);
@@ -28,7 +29,8 @@ class PostsNew extends Component {
       author: '',
       body: '',
       image_url: '',
-      votes: 0
+      votes: 0,
+      comments: []
     })
   }
 
@@ -43,26 +45,26 @@ render() {
 
             <form onSubmit={this.addPost}>
               <div>
-                <label for="title">Title</label>
+                <label htmlFor="title">Title</label>
                 <input onChange={this.handleChange} value={title} id="title" className="form-control" required/>
 
               </div>
               <div>
-                <label for="body">Body</label>
+                <label htmlFor="body">Body</label>
                 <textarea onChange={this.handleChange} value={body}  id="body" className="form-control" required></textarea>
               </div>
               <div>
-                <label for="author">Author</label>
+                <label htmlFor="author">Author</label>
                 <input onChange={this.handleChange} value={author} id="author" className="form-control" required/>
 
               </div>
               <div>
-                <label for="image_url">Image URL</label>
+                <label htmlFor="image_url">Image URL</label>
                 <input onChange={this.handleChange} value={image_url}  id="image_url" className="form-control" required/>
 
               </div>
               <div className="form-group">
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary" id="create_post">
                   Create Post
                 </button>
               </div>
